@@ -214,11 +214,6 @@
     <Content Include="Scripts\HomePage\vendor\bootstrap\js\bootstrap.js.map" />
     <Content Include="Scripts\HomePage\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Content\Login\less\style.less" />
-    <Content Include="Models\dbDrugStoreManager.dbml">
-      <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>dbDrugStoreManager.designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Content\Details\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="Content\Details\vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="Content\Details\vendor\bootstrap\js\bootstrap.bundle.js.map" />
@@ -227,6 +222,11 @@
     <Content Include="Content\Details\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Content\Details\vendor\jquery\jquery.min.map" />
     <Content Include="Content\Details\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Models\dbDrugStoreManager.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dbDrugStoreManager.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Models\dbDrugStoreManager.dbml.layout">
       <DependentUpon>dbDrugStoreManager.dbml</DependentUpon>
     </None>
