@@ -22,7 +22,7 @@ namespace MVCDrugStoreManager.Models
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PhanPhoiThuoc")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="PhanPhoiThuoc1")]
 	public partial class dbDrugStoreManagerDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -48,9 +48,9 @@ namespace MVCDrugStoreManager.Models
     partial void InsertDON_DAT_HANG(DON_DAT_HANG instance);
     partial void UpdateDON_DAT_HANG(DON_DAT_HANG instance);
     partial void DeleteDON_DAT_HANG(DON_DAT_HANG instance);
-    partial void InsertDON_VI_TINH(DON_VI_TINH instance);
-    partial void UpdateDON_VI_TINH(DON_VI_TINH instance);
-    partial void DeleteDON_VI_TINH(DON_VI_TINH instance);
+    partial void InsertDVT(DVT instance);
+    partial void UpdateDVT(DVT instance);
+    partial void DeleteDVT(DVT instance);
     partial void InsertHOA_DON(HOA_DON instance);
     partial void UpdateHOA_DON(HOA_DON instance);
     partial void DeleteHOA_DON(HOA_DON instance);
@@ -72,7 +72,7 @@ namespace MVCDrugStoreManager.Models
     #endregion
 		
 		public dbDrugStoreManagerDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["PhanPhoiThuocConnectionString"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["PhanPhoiThuoc1ConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -149,11 +149,11 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		public System.Data.Linq.Table<DON_VI_TINH> DON_VI_TINHs
+		public System.Data.Linq.Table<DVT> DVTs
 		{
 			get
 			{
-				return this.GetTable<DON_VI_TINH>();
+				return this.GetTable<DVT>();
 			}
 		}
 		
@@ -212,56 +212,48 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaCTDDH;
+		private int _MaCTDDH;
 		
-		private string _MaDDH;
+		private System.Nullable<int> _MaDDH;
 		
-		private string _MaSP;
+		private System.Nullable<int> _MaSP;
 		
-		private string _DVT;
+		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<double> _SoLuong;
-		
-		private System.Nullable<double> _DonGia;
-		
-		private System.Nullable<double> _ThanhTien;
+		private System.Nullable<int> _SoLuong;
 		
 		private EntityRef<SAN_PHAM> _SAN_PHAM;
 		
 		private EntityRef<DON_DAT_HANG> _DON_DAT_HANG;
 		
-		private EntityRef<DON_VI_TINH> _DON_VI_TINH;
+		private EntityRef<DVT> _DVT1;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaCTDDHChanging(string value);
+    partial void OnMaCTDDHChanging(int value);
     partial void OnMaCTDDHChanged();
-    partial void OnMaDDHChanging(string value);
+    partial void OnMaDDHChanging(System.Nullable<int> value);
     partial void OnMaDDHChanged();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(System.Nullable<int> value);
     partial void OnMaSPChanged();
-    partial void OnDVTChanging(string value);
+    partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<double> value);
+    partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
-    partial void OnDonGiaChanging(System.Nullable<double> value);
-    partial void OnDonGiaChanged();
-    partial void OnThanhTienChanging(System.Nullable<double> value);
-    partial void OnThanhTienChanged();
     #endregion
 		
 		public CHI_TIET_DON_DAT_HANG()
 		{
 			this._SAN_PHAM = default(EntityRef<SAN_PHAM>);
 			this._DON_DAT_HANG = default(EntityRef<DON_DAT_HANG>);
-			this._DON_VI_TINH = default(EntityRef<DON_VI_TINH>);
+			this._DVT1 = default(EntityRef<DVT>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTDDH", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaCTDDH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTDDH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaCTDDH
 		{
 			get
 			{
@@ -280,8 +272,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDDH", DbType="VarChar(10)")]
-		public string MaDDH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDDH", DbType="Int")]
+		public System.Nullable<int> MaDDH
 		{
 			get
 			{
@@ -304,8 +296,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="VarChar(10)")]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="Int")]
+		public System.Nullable<int> MaSP
 		{
 			get
 			{
@@ -328,8 +320,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="VarChar(10)")]
-		public string DVT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="Int")]
+		public System.Nullable<int> DVT
 		{
 			get
 			{
@@ -339,7 +331,7 @@ namespace MVCDrugStoreManager.Models
 			{
 				if ((this._DVT != value))
 				{
-					if (this._DON_VI_TINH.HasLoadedOrAssignedValue)
+					if (this._DVT1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -352,8 +344,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Float")]
-		public System.Nullable<double> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
 		{
 			get
 			{
@@ -368,46 +360,6 @@ namespace MVCDrugStoreManager.Models
 					this._SoLuong = value;
 					this.SendPropertyChanged("SoLuong");
 					this.OnSoLuongChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Float")]
-		public System.Nullable<double> DonGia
-		{
-			get
-			{
-				return this._DonGia;
-			}
-			set
-			{
-				if ((this._DonGia != value))
-				{
-					this.OnDonGiaChanging(value);
-					this.SendPropertyChanging();
-					this._DonGia = value;
-					this.SendPropertyChanged("DonGia");
-					this.OnDonGiaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhTien", DbType="Float")]
-		public System.Nullable<double> ThanhTien
-		{
-			get
-			{
-				return this._ThanhTien;
-			}
-			set
-			{
-				if ((this._ThanhTien != value))
-				{
-					this.OnThanhTienChanging(value);
-					this.SendPropertyChanging();
-					this._ThanhTien = value;
-					this.SendPropertyChanged("ThanhTien");
-					this.OnThanhTienChanged();
 				}
 			}
 		}
@@ -439,7 +391,7 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaSP = default(string);
+						this._MaSP = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("SAN_PHAM");
 				}
@@ -473,33 +425,33 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaDDH = default(string);
+						this._MaDDH = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("DON_DAT_HANG");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CHI_TIET_DON_DAT_HANG", Storage="_DON_VI_TINH", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
-		public DON_VI_TINH DON_VI_TINH
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CHI_TIET_DON_DAT_HANG", Storage="_DVT1", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
+		public DVT DVT1
 		{
 			get
 			{
-				return this._DON_VI_TINH.Entity;
+				return this._DVT1.Entity;
 			}
 			set
 			{
-				DON_VI_TINH previousValue = this._DON_VI_TINH.Entity;
+				DVT previousValue = this._DVT1.Entity;
 				if (((previousValue != value) 
-							|| (this._DON_VI_TINH.HasLoadedOrAssignedValue == false)))
+							|| (this._DVT1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._DON_VI_TINH.Entity = null;
+						this._DVT1.Entity = null;
 						previousValue.CHI_TIET_DON_DAT_HANGs.Remove(this);
 					}
-					this._DON_VI_TINH.Entity = value;
+					this._DVT1.Entity = value;
 					if ((value != null))
 					{
 						value.CHI_TIET_DON_DAT_HANGs.Add(this);
@@ -507,9 +459,9 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._DVT = default(string);
+						this._DVT = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("DON_VI_TINH");
+					this.SendPropertyChanged("DVT1");
 				}
 			}
 		}
@@ -541,19 +493,19 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaSP;
+		private int _MaSP;
 		
 		private string _TenSP;
 		
 		private string _LoaiSP;
 		
-		private string _DVT;
+		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<int> _SoLuongCon;
-		
-		private System.Nullable<double> _DonGia;
+		private System.Nullable<decimal> _DonGia;
 		
 		private string _Images;
+		
+		private System.Nullable<System.DateTime> _Ngaycapnhat;
 		
 		private EntitySet<CHI_TIET_DON_DAT_HANG> _CHI_TIET_DON_DAT_HANGs;
 		
@@ -561,7 +513,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private EntitySet<CT_HOA_DON> _CT_HOA_DONs;
 		
-		private EntityRef<DON_VI_TINH> _DON_VI_TINH;
+		private EntityRef<DVT> _DVT1;
 		
 		private EntityRef<LOAI_SAN_PHAM> _LOAI_SAN_PHAM;
 		
@@ -569,20 +521,20 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(int value);
     partial void OnMaSPChanged();
     partial void OnTenSPChanging(string value);
     partial void OnTenSPChanged();
     partial void OnLoaiSPChanging(string value);
     partial void OnLoaiSPChanged();
-    partial void OnDVTChanging(string value);
+    partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongConChanging(System.Nullable<int> value);
-    partial void OnSoLuongConChanged();
-    partial void OnDonGiaChanging(System.Nullable<double> value);
+    partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
     partial void OnImagesChanging(string value);
     partial void OnImagesChanged();
+    partial void OnNgaycapnhatChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgaycapnhatChanged();
     #endregion
 		
 		public SAN_PHAM()
@@ -590,13 +542,13 @@ namespace MVCDrugStoreManager.Models
 			this._CHI_TIET_DON_DAT_HANGs = new EntitySet<CHI_TIET_DON_DAT_HANG>(new Action<CHI_TIET_DON_DAT_HANG>(this.attach_CHI_TIET_DON_DAT_HANGs), new Action<CHI_TIET_DON_DAT_HANG>(this.detach_CHI_TIET_DON_DAT_HANGs));
 			this._CHI_TIET_PHIEU_GIAO_HANGs = new EntitySet<CHI_TIET_PHIEU_GIAO_HANG>(new Action<CHI_TIET_PHIEU_GIAO_HANG>(this.attach_CHI_TIET_PHIEU_GIAO_HANGs), new Action<CHI_TIET_PHIEU_GIAO_HANG>(this.detach_CHI_TIET_PHIEU_GIAO_HANGs));
 			this._CT_HOA_DONs = new EntitySet<CT_HOA_DON>(new Action<CT_HOA_DON>(this.attach_CT_HOA_DONs), new Action<CT_HOA_DON>(this.detach_CT_HOA_DONs));
-			this._DON_VI_TINH = default(EntityRef<DON_VI_TINH>);
+			this._DVT1 = default(EntityRef<DVT>);
 			this._LOAI_SAN_PHAM = default(EntityRef<LOAI_SAN_PHAM>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaSP
 		{
 			get
 			{
@@ -615,7 +567,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenSP", DbType="NVarChar(30)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenSP", DbType="NVarChar(50)")]
 		public string TenSP
 		{
 			get
@@ -635,7 +587,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoaiSP", DbType="VarChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoaiSP", DbType="VarChar(50)")]
 		public string LoaiSP
 		{
 			get
@@ -659,8 +611,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="VarChar(10)")]
-		public string DVT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="Int")]
+		public System.Nullable<int> DVT
 		{
 			get
 			{
@@ -670,7 +622,7 @@ namespace MVCDrugStoreManager.Models
 			{
 				if ((this._DVT != value))
 				{
-					if (this._DON_VI_TINH.HasLoadedOrAssignedValue)
+					if (this._DVT1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -683,28 +635,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuongCon", DbType="Int")]
-		public System.Nullable<int> SoLuongCon
-		{
-			get
-			{
-				return this._SoLuongCon;
-			}
-			set
-			{
-				if ((this._SoLuongCon != value))
-				{
-					this.OnSoLuongConChanging(value);
-					this.SendPropertyChanging();
-					this._SoLuongCon = value;
-					this.SendPropertyChanged("SoLuongCon");
-					this.OnSoLuongConChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Float")]
-		public System.Nullable<double> DonGia
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Money")]
+		public System.Nullable<decimal> DonGia
 		{
 			get
 			{
@@ -739,6 +671,26 @@ namespace MVCDrugStoreManager.Models
 					this._Images = value;
 					this.SendPropertyChanged("Images");
 					this.OnImagesChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ngaycapnhat", DbType="Date")]
+		public System.Nullable<System.DateTime> Ngaycapnhat
+		{
+			get
+			{
+				return this._Ngaycapnhat;
+			}
+			set
+			{
+				if ((this._Ngaycapnhat != value))
+				{
+					this.OnNgaycapnhatChanging(value);
+					this.SendPropertyChanging();
+					this._Ngaycapnhat = value;
+					this.SendPropertyChanged("Ngaycapnhat");
+					this.OnNgaycapnhatChanged();
 				}
 			}
 		}
@@ -782,26 +734,26 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_SAN_PHAM", Storage="_DON_VI_TINH", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
-		public DON_VI_TINH DON_VI_TINH
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_SAN_PHAM", Storage="_DVT1", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
+		public DVT DVT1
 		{
 			get
 			{
-				return this._DON_VI_TINH.Entity;
+				return this._DVT1.Entity;
 			}
 			set
 			{
-				DON_VI_TINH previousValue = this._DON_VI_TINH.Entity;
+				DVT previousValue = this._DVT1.Entity;
 				if (((previousValue != value) 
-							|| (this._DON_VI_TINH.HasLoadedOrAssignedValue == false)))
+							|| (this._DVT1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._DON_VI_TINH.Entity = null;
+						this._DVT1.Entity = null;
 						previousValue.SAN_PHAMs.Remove(this);
 					}
-					this._DON_VI_TINH.Entity = value;
+					this._DVT1.Entity = value;
 					if ((value != null))
 					{
 						value.SAN_PHAMs.Add(this);
@@ -809,9 +761,9 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._DVT = default(string);
+						this._DVT = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("DON_VI_TINH");
+					this.SendPropertyChanged("DVT1");
 				}
 			}
 		}
@@ -917,19 +869,19 @@ namespace MVCDrugStoreManager.Models
 		
 		private string _MaPGH;
 		
-		private string _MaSP;
+		private System.Nullable<int> _MaSP;
 		
-		private string _DVT;
+		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<double> _SoLuong;
+		private System.Nullable<int> _SoLuong;
 		
-		private System.Nullable<double> _DonGia;
+		private System.Nullable<decimal> _DonGia;
 		
-		private System.Nullable<double> _ThanhTien;
+		private System.Nullable<decimal> _ThanhTien;
 		
 		private EntityRef<SAN_PHAM> _SAN_PHAM;
 		
-		private EntityRef<DON_VI_TINH> _DON_VI_TINH;
+		private EntityRef<DVT> _DVT1;
 		
 		private EntityRef<PHIEU_GIAO_HANG> _PHIEU_GIAO_HANG;
 		
@@ -941,27 +893,27 @@ namespace MVCDrugStoreManager.Models
     partial void OnMaCTPGHChanged();
     partial void OnMaPGHChanging(string value);
     partial void OnMaPGHChanged();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(System.Nullable<int> value);
     partial void OnMaSPChanged();
-    partial void OnDVTChanging(string value);
+    partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<double> value);
+    partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
-    partial void OnDonGiaChanging(System.Nullable<double> value);
+    partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
-    partial void OnThanhTienChanging(System.Nullable<double> value);
+    partial void OnThanhTienChanging(System.Nullable<decimal> value);
     partial void OnThanhTienChanged();
     #endregion
 		
 		public CHI_TIET_PHIEU_GIAO_HANG()
 		{
 			this._SAN_PHAM = default(EntityRef<SAN_PHAM>);
-			this._DON_VI_TINH = default(EntityRef<DON_VI_TINH>);
+			this._DVT1 = default(EntityRef<DVT>);
 			this._PHIEU_GIAO_HANG = default(EntityRef<PHIEU_GIAO_HANG>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTPGH", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTPGH", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaCTPGH
 		{
 			get
@@ -981,7 +933,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(50)")]
 		public string MaPGH
 		{
 			get
@@ -1005,8 +957,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="VarChar(10)")]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="Int")]
+		public System.Nullable<int> MaSP
 		{
 			get
 			{
@@ -1029,8 +981,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="VarChar(10)")]
-		public string DVT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="Int")]
+		public System.Nullable<int> DVT
 		{
 			get
 			{
@@ -1040,7 +992,7 @@ namespace MVCDrugStoreManager.Models
 			{
 				if ((this._DVT != value))
 				{
-					if (this._DON_VI_TINH.HasLoadedOrAssignedValue)
+					if (this._DVT1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -1053,8 +1005,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Float")]
-		public System.Nullable<double> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
 		{
 			get
 			{
@@ -1073,8 +1025,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Float")]
-		public System.Nullable<double> DonGia
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Money")]
+		public System.Nullable<decimal> DonGia
 		{
 			get
 			{
@@ -1093,8 +1045,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhTien", DbType="Float")]
-		public System.Nullable<double> ThanhTien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhTien", DbType="Money")]
+		public System.Nullable<decimal> ThanhTien
 		{
 			get
 			{
@@ -1140,33 +1092,33 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaSP = default(string);
+						this._MaSP = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("SAN_PHAM");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CHI_TIET_PHIEU_GIAO_HANG", Storage="_DON_VI_TINH", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
-		public DON_VI_TINH DON_VI_TINH
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CHI_TIET_PHIEU_GIAO_HANG", Storage="_DVT1", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
+		public DVT DVT1
 		{
 			get
 			{
-				return this._DON_VI_TINH.Entity;
+				return this._DVT1.Entity;
 			}
 			set
 			{
-				DON_VI_TINH previousValue = this._DON_VI_TINH.Entity;
+				DVT previousValue = this._DVT1.Entity;
 				if (((previousValue != value) 
-							|| (this._DON_VI_TINH.HasLoadedOrAssignedValue == false)))
+							|| (this._DVT1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._DON_VI_TINH.Entity = null;
+						this._DVT1.Entity = null;
 						previousValue.CHI_TIET_PHIEU_GIAO_HANGs.Remove(this);
 					}
-					this._DON_VI_TINH.Entity = value;
+					this._DVT1.Entity = value;
 					if ((value != null))
 					{
 						value.CHI_TIET_PHIEU_GIAO_HANGs.Add(this);
@@ -1174,9 +1126,9 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._DVT = default(string);
+						this._DVT = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("DON_VI_TINH");
+					this.SendPropertyChanged("DVT1");
 				}
 			}
 		}
@@ -1244,21 +1196,21 @@ namespace MVCDrugStoreManager.Models
 		
 		private string _MaCTHD;
 		
-		private string _MaHD;
+		private System.Nullable<int> _MaHD;
 		
-		private string _MaSP;
+		private System.Nullable<int> _MaSP;
 		
-		private string _DVT;
+		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<double> _SoLuong;
+		private System.Nullable<int> _SoLuong;
 		
-		private System.Nullable<double> _DonGia;
+		private System.Nullable<decimal> _DonGia;
 		
-		private System.Nullable<double> _ThanhTien;
+		private System.Nullable<decimal> _ThanhTien;
 		
 		private EntityRef<SAN_PHAM> _SAN_PHAM;
 		
-		private EntityRef<DON_VI_TINH> _DON_VI_TINH;
+		private EntityRef<DVT> _DVT1;
 		
 		private EntityRef<HOA_DON> _HOA_DON;
 		
@@ -1268,29 +1220,29 @@ namespace MVCDrugStoreManager.Models
     partial void OnCreated();
     partial void OnMaCTHDChanging(string value);
     partial void OnMaCTHDChanged();
-    partial void OnMaHDChanging(string value);
+    partial void OnMaHDChanging(System.Nullable<int> value);
     partial void OnMaHDChanged();
-    partial void OnMaSPChanging(string value);
+    partial void OnMaSPChanging(System.Nullable<int> value);
     partial void OnMaSPChanged();
-    partial void OnDVTChanging(string value);
+    partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<double> value);
+    partial void OnSoLuongChanging(System.Nullable<int> value);
     partial void OnSoLuongChanged();
-    partial void OnDonGiaChanging(System.Nullable<double> value);
+    partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
-    partial void OnThanhTienChanging(System.Nullable<double> value);
+    partial void OnThanhTienChanging(System.Nullable<decimal> value);
     partial void OnThanhTienChanged();
     #endregion
 		
 		public CT_HOA_DON()
 		{
 			this._SAN_PHAM = default(EntityRef<SAN_PHAM>);
-			this._DON_VI_TINH = default(EntityRef<DON_VI_TINH>);
+			this._DVT1 = default(EntityRef<DVT>);
 			this._HOA_DON = default(EntityRef<HOA_DON>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTHD", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTHD", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaCTHD
 		{
 			get
@@ -1310,8 +1262,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHD", DbType="VarChar(10)")]
-		public string MaHD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHD", DbType="Int")]
+		public System.Nullable<int> MaHD
 		{
 			get
 			{
@@ -1334,8 +1286,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="VarChar(10)")]
-		public string MaSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaSP", DbType="Int")]
+		public System.Nullable<int> MaSP
 		{
 			get
 			{
@@ -1358,8 +1310,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="VarChar(10)")]
-		public string DVT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DVT", DbType="Int")]
+		public System.Nullable<int> DVT
 		{
 			get
 			{
@@ -1369,7 +1321,7 @@ namespace MVCDrugStoreManager.Models
 			{
 				if ((this._DVT != value))
 				{
-					if (this._DON_VI_TINH.HasLoadedOrAssignedValue)
+					if (this._DVT1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -1382,8 +1334,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Float")]
-		public System.Nullable<double> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
 		{
 			get
 			{
@@ -1402,8 +1354,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Float")]
-		public System.Nullable<double> DonGia
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonGia", DbType="Money")]
+		public System.Nullable<decimal> DonGia
 		{
 			get
 			{
@@ -1422,8 +1374,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhTien", DbType="Float")]
-		public System.Nullable<double> ThanhTien
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThanhTien", DbType="Money")]
+		public System.Nullable<decimal> ThanhTien
 		{
 			get
 			{
@@ -1469,33 +1421,33 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaSP = default(string);
+						this._MaSP = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("SAN_PHAM");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CT_HOA_DON", Storage="_DON_VI_TINH", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
-		public DON_VI_TINH DON_VI_TINH
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CT_HOA_DON", Storage="_DVT1", ThisKey="DVT", OtherKey="MaDVT", IsForeignKey=true)]
+		public DVT DVT1
 		{
 			get
 			{
-				return this._DON_VI_TINH.Entity;
+				return this._DVT1.Entity;
 			}
 			set
 			{
-				DON_VI_TINH previousValue = this._DON_VI_TINH.Entity;
+				DVT previousValue = this._DVT1.Entity;
 				if (((previousValue != value) 
-							|| (this._DON_VI_TINH.HasLoadedOrAssignedValue == false)))
+							|| (this._DVT1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._DON_VI_TINH.Entity = null;
+						this._DVT1.Entity = null;
 						previousValue.CT_HOA_DONs.Remove(this);
 					}
-					this._DON_VI_TINH.Entity = value;
+					this._DVT1.Entity = value;
 					if ((value != null))
 					{
 						value.CT_HOA_DONs.Add(this);
@@ -1503,9 +1455,9 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._DVT = default(string);
+						this._DVT = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("DON_VI_TINH");
+					this.SendPropertyChanged("DVT1");
 				}
 			}
 		}
@@ -1537,7 +1489,7 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaHD = default(string);
+						this._MaHD = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("HOA_DON");
 				}
@@ -1657,7 +1609,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaDDH;
+		private int _MaDDH;
 		
 		private string _MaKH;
 		
@@ -1665,13 +1617,15 @@ namespace MVCDrugStoreManager.Models
 		
 		private EntitySet<CHI_TIET_DON_DAT_HANG> _CHI_TIET_DON_DAT_HANGs;
 		
+		private EntitySet<HOA_DON> _HOA_DONs;
+		
 		private EntityRef<KHACH_HANG> _KHACH_HANG;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaDDHChanging(string value);
+    partial void OnMaDDHChanging(int value);
     partial void OnMaDDHChanged();
     partial void OnMaKHChanging(string value);
     partial void OnMaKHChanged();
@@ -1682,12 +1636,13 @@ namespace MVCDrugStoreManager.Models
 		public DON_DAT_HANG()
 		{
 			this._CHI_TIET_DON_DAT_HANGs = new EntitySet<CHI_TIET_DON_DAT_HANG>(new Action<CHI_TIET_DON_DAT_HANG>(this.attach_CHI_TIET_DON_DAT_HANGs), new Action<CHI_TIET_DON_DAT_HANG>(this.detach_CHI_TIET_DON_DAT_HANGs));
+			this._HOA_DONs = new EntitySet<HOA_DON>(new Action<HOA_DON>(this.attach_HOA_DONs), new Action<HOA_DON>(this.detach_HOA_DONs));
 			this._KHACH_HANG = default(EntityRef<KHACH_HANG>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDDH", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaDDH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDDH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaDDH
 		{
 			get
 			{
@@ -1706,7 +1661,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(50)")]
 		public string MaKH
 		{
 			get
@@ -1760,6 +1715,19 @@ namespace MVCDrugStoreManager.Models
 			set
 			{
 				this._CHI_TIET_DON_DAT_HANGs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_DAT_HANG_HOA_DON", Storage="_HOA_DONs", ThisKey="MaDDH", OtherKey="MaDDH")]
+		public EntitySet<HOA_DON> HOA_DONs
+		{
+			get
+			{
+				return this._HOA_DONs;
+			}
+			set
+			{
+				this._HOA_DONs.Assign(value);
 			}
 		}
 		
@@ -1828,15 +1796,27 @@ namespace MVCDrugStoreManager.Models
 			this.SendPropertyChanging();
 			entity.DON_DAT_HANG = null;
 		}
+		
+		private void attach_HOA_DONs(HOA_DON entity)
+		{
+			this.SendPropertyChanging();
+			entity.DON_DAT_HANG = this;
+		}
+		
+		private void detach_HOA_DONs(HOA_DON entity)
+		{
+			this.SendPropertyChanging();
+			entity.DON_DAT_HANG = null;
+		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DON_VI_TINH")]
-	public partial class DON_VI_TINH : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DVT")]
+	public partial class DVT : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaDVT;
+		private int _MaDVT;
 		
 		private string _TenDVT;
 		
@@ -1852,13 +1832,13 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaDVTChanging(string value);
+    partial void OnMaDVTChanging(int value);
     partial void OnMaDVTChanged();
     partial void OnTenDVTChanging(string value);
     partial void OnTenDVTChanged();
     #endregion
 		
-		public DON_VI_TINH()
+		public DVT()
 		{
 			this._CHI_TIET_DON_DAT_HANGs = new EntitySet<CHI_TIET_DON_DAT_HANG>(new Action<CHI_TIET_DON_DAT_HANG>(this.attach_CHI_TIET_DON_DAT_HANGs), new Action<CHI_TIET_DON_DAT_HANG>(this.detach_CHI_TIET_DON_DAT_HANGs));
 			this._SAN_PHAMs = new EntitySet<SAN_PHAM>(new Action<SAN_PHAM>(this.attach_SAN_PHAMs), new Action<SAN_PHAM>(this.detach_SAN_PHAMs));
@@ -1867,8 +1847,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDVT", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaDVT
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDVT", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaDVT
 		{
 			get
 			{
@@ -1887,7 +1867,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDVT", DbType="NVarChar(30)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDVT", DbType="NVarChar(50)")]
 		public string TenDVT
 		{
 			get
@@ -1907,7 +1887,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CHI_TIET_DON_DAT_HANG", Storage="_CHI_TIET_DON_DAT_HANGs", ThisKey="MaDVT", OtherKey="DVT")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CHI_TIET_DON_DAT_HANG", Storage="_CHI_TIET_DON_DAT_HANGs", ThisKey="MaDVT", OtherKey="DVT")]
 		public EntitySet<CHI_TIET_DON_DAT_HANG> CHI_TIET_DON_DAT_HANGs
 		{
 			get
@@ -1920,7 +1900,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_SAN_PHAM", Storage="_SAN_PHAMs", ThisKey="MaDVT", OtherKey="DVT")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_SAN_PHAM", Storage="_SAN_PHAMs", ThisKey="MaDVT", OtherKey="DVT")]
 		public EntitySet<SAN_PHAM> SAN_PHAMs
 		{
 			get
@@ -1933,7 +1913,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CHI_TIET_PHIEU_GIAO_HANG", Storage="_CHI_TIET_PHIEU_GIAO_HANGs", ThisKey="MaDVT", OtherKey="DVT")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CHI_TIET_PHIEU_GIAO_HANG", Storage="_CHI_TIET_PHIEU_GIAO_HANGs", ThisKey="MaDVT", OtherKey="DVT")]
 		public EntitySet<CHI_TIET_PHIEU_GIAO_HANG> CHI_TIET_PHIEU_GIAO_HANGs
 		{
 			get
@@ -1946,7 +1926,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_VI_TINH_CT_HOA_DON", Storage="_CT_HOA_DONs", ThisKey="MaDVT", OtherKey="DVT")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DVT_CT_HOA_DON", Storage="_CT_HOA_DONs", ThisKey="MaDVT", OtherKey="DVT")]
 		public EntitySet<CT_HOA_DON> CT_HOA_DONs
 		{
 			get
@@ -1982,49 +1962,49 @@ namespace MVCDrugStoreManager.Models
 		private void attach_CHI_TIET_DON_DAT_HANGs(CHI_TIET_DON_DAT_HANG entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = this;
+			entity.DVT1 = this;
 		}
 		
 		private void detach_CHI_TIET_DON_DAT_HANGs(CHI_TIET_DON_DAT_HANG entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = null;
+			entity.DVT1 = null;
 		}
 		
 		private void attach_SAN_PHAMs(SAN_PHAM entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = this;
+			entity.DVT1 = this;
 		}
 		
 		private void detach_SAN_PHAMs(SAN_PHAM entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = null;
+			entity.DVT1 = null;
 		}
 		
 		private void attach_CHI_TIET_PHIEU_GIAO_HANGs(CHI_TIET_PHIEU_GIAO_HANG entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = this;
+			entity.DVT1 = this;
 		}
 		
 		private void detach_CHI_TIET_PHIEU_GIAO_HANGs(CHI_TIET_PHIEU_GIAO_HANG entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = null;
+			entity.DVT1 = null;
 		}
 		
 		private void attach_CT_HOA_DONs(CT_HOA_DON entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = this;
+			entity.DVT1 = this;
 		}
 		
 		private void detach_CT_HOA_DONs(CT_HOA_DON entity)
 		{
 			this.SendPropertyChanging();
-			entity.DON_VI_TINH = null;
+			entity.DVT1 = null;
 		}
 	}
 	
@@ -2034,28 +2014,30 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaHD;
+		private int _MaHD;
+		
+		private System.Nullable<int> _MaDDH;
 		
 		private System.Nullable<System.DateTime> _NgayLapHD;
-		
-		private string _MaKH;
 		
 		private string _HinhThucThanhToan;
 		
 		private EntitySet<CT_HOA_DON> _CT_HOA_DONs;
 		
-		private EntityRef<KHACH_HANG> _KHACH_HANG;
+		private EntitySet<PHIEU_GIAO_HANG> _PHIEU_GIAO_HANGs;
+		
+		private EntityRef<DON_DAT_HANG> _DON_DAT_HANG;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaHDChanging(string value);
+    partial void OnMaHDChanging(int value);
     partial void OnMaHDChanged();
+    partial void OnMaDDHChanging(System.Nullable<int> value);
+    partial void OnMaDDHChanged();
     partial void OnNgayLapHDChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayLapHDChanged();
-    partial void OnMaKHChanging(string value);
-    partial void OnMaKHChanged();
     partial void OnHinhThucThanhToanChanging(string value);
     partial void OnHinhThucThanhToanChanged();
     #endregion
@@ -2063,12 +2045,13 @@ namespace MVCDrugStoreManager.Models
 		public HOA_DON()
 		{
 			this._CT_HOA_DONs = new EntitySet<CT_HOA_DON>(new Action<CT_HOA_DON>(this.attach_CT_HOA_DONs), new Action<CT_HOA_DON>(this.detach_CT_HOA_DONs));
-			this._KHACH_HANG = default(EntityRef<KHACH_HANG>);
+			this._PHIEU_GIAO_HANGs = new EntitySet<PHIEU_GIAO_HANG>(new Action<PHIEU_GIAO_HANG>(this.attach_PHIEU_GIAO_HANGs), new Action<PHIEU_GIAO_HANG>(this.detach_PHIEU_GIAO_HANGs));
+			this._DON_DAT_HANG = default(EntityRef<DON_DAT_HANG>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHD", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaHD
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHD", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaHD
 		{
 			get
 			{
@@ -2083,6 +2066,30 @@ namespace MVCDrugStoreManager.Models
 					this._MaHD = value;
 					this.SendPropertyChanged("MaHD");
 					this.OnMaHDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDDH", DbType="Int")]
+		public System.Nullable<int> MaDDH
+		{
+			get
+			{
+				return this._MaDDH;
+			}
+			set
+			{
+				if ((this._MaDDH != value))
+				{
+					if (this._DON_DAT_HANG.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaDDHChanging(value);
+					this.SendPropertyChanging();
+					this._MaDDH = value;
+					this.SendPropertyChanged("MaDDH");
+					this.OnMaDDHChanged();
 				}
 			}
 		}
@@ -2107,31 +2114,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(10)")]
-		public string MaKH
-		{
-			get
-			{
-				return this._MaKH;
-			}
-			set
-			{
-				if ((this._MaKH != value))
-				{
-					if (this._KHACH_HANG.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMaKHChanging(value);
-					this.SendPropertyChanging();
-					this._MaKH = value;
-					this.SendPropertyChanged("MaKH");
-					this.OnMaKHChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhThucThanhToan", DbType="NVarChar(20)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhThucThanhToan", DbType="NVarChar(50)")]
 		public string HinhThucThanhToan
 		{
 			get
@@ -2164,36 +2147,49 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KHACH_HANG_HOA_DON", Storage="_KHACH_HANG", ThisKey="MaKH", OtherKey="CMND", IsForeignKey=true)]
-		public KHACH_HANG KHACH_HANG
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HOA_DON_PHIEU_GIAO_HANG", Storage="_PHIEU_GIAO_HANGs", ThisKey="MaHD", OtherKey="MaHD")]
+		public EntitySet<PHIEU_GIAO_HANG> PHIEU_GIAO_HANGs
 		{
 			get
 			{
-				return this._KHACH_HANG.Entity;
+				return this._PHIEU_GIAO_HANGs;
 			}
 			set
 			{
-				KHACH_HANG previousValue = this._KHACH_HANG.Entity;
+				this._PHIEU_GIAO_HANGs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DON_DAT_HANG_HOA_DON", Storage="_DON_DAT_HANG", ThisKey="MaDDH", OtherKey="MaDDH", IsForeignKey=true)]
+		public DON_DAT_HANG DON_DAT_HANG
+		{
+			get
+			{
+				return this._DON_DAT_HANG.Entity;
+			}
+			set
+			{
+				DON_DAT_HANG previousValue = this._DON_DAT_HANG.Entity;
 				if (((previousValue != value) 
-							|| (this._KHACH_HANG.HasLoadedOrAssignedValue == false)))
+							|| (this._DON_DAT_HANG.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._KHACH_HANG.Entity = null;
+						this._DON_DAT_HANG.Entity = null;
 						previousValue.HOA_DONs.Remove(this);
 					}
-					this._KHACH_HANG.Entity = value;
+					this._DON_DAT_HANG.Entity = value;
 					if ((value != null))
 					{
 						value.HOA_DONs.Add(this);
-						this._MaKH = value.CMND;
+						this._MaDDH = value.MaDDH;
 					}
 					else
 					{
-						this._MaKH = default(string);
+						this._MaDDH = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("KHACH_HANG");
+					this.SendPropertyChanged("DON_DAT_HANG");
 				}
 			}
 		}
@@ -2229,6 +2225,18 @@ namespace MVCDrugStoreManager.Models
 			this.SendPropertyChanging();
 			entity.HOA_DON = null;
 		}
+		
+		private void attach_PHIEU_GIAO_HANGs(PHIEU_GIAO_HANG entity)
+		{
+			this.SendPropertyChanging();
+			entity.HOA_DON = this;
+		}
+		
+		private void detach_PHIEU_GIAO_HANGs(PHIEU_GIAO_HANG entity)
+		{
+			this.SendPropertyChanging();
+			entity.HOA_DON = null;
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KHACH_HANG")]
@@ -2249,10 +2257,6 @@ namespace MVCDrugStoreManager.Models
 		
 		private EntitySet<DON_DAT_HANG> _DON_DAT_HANGs;
 		
-		private EntitySet<HOA_DON> _HOA_DONs;
-		
-		private EntitySet<PHIEU_GIAO_HANG> _PHIEU_GIAO_HANGs;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -2272,12 +2276,10 @@ namespace MVCDrugStoreManager.Models
 		public KHACH_HANG()
 		{
 			this._DON_DAT_HANGs = new EntitySet<DON_DAT_HANG>(new Action<DON_DAT_HANG>(this.attach_DON_DAT_HANGs), new Action<DON_DAT_HANG>(this.detach_DON_DAT_HANGs));
-			this._HOA_DONs = new EntitySet<HOA_DON>(new Action<HOA_DON>(this.attach_HOA_DONs), new Action<HOA_DON>(this.detach_HOA_DONs));
-			this._PHIEU_GIAO_HANGs = new EntitySet<PHIEU_GIAO_HANG>(new Action<PHIEU_GIAO_HANG>(this.attach_PHIEU_GIAO_HANGs), new Action<PHIEU_GIAO_HANG>(this.detach_PHIEU_GIAO_HANGs));
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CMND", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CMND", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string CMND
 		{
 			get
@@ -2297,7 +2299,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(30)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(50)")]
 		public string TenKH
 		{
 			get
@@ -2317,7 +2319,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="NVarChar(30)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="NVarChar(50)")]
 		public string DiaChi
 		{
 			get
@@ -2337,7 +2339,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="VarChar(15)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="VarChar(50)")]
 		public string SDT
 		{
 			get
@@ -2390,32 +2392,6 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KHACH_HANG_HOA_DON", Storage="_HOA_DONs", ThisKey="CMND", OtherKey="MaKH")]
-		public EntitySet<HOA_DON> HOA_DONs
-		{
-			get
-			{
-				return this._HOA_DONs;
-			}
-			set
-			{
-				this._HOA_DONs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KHACH_HANG_PHIEU_GIAO_HANG", Storage="_PHIEU_GIAO_HANGs", ThisKey="CMND", OtherKey="MaKH")]
-		public EntitySet<PHIEU_GIAO_HANG> PHIEU_GIAO_HANGs
-		{
-			get
-			{
-				return this._PHIEU_GIAO_HANGs;
-			}
-			set
-			{
-				this._PHIEU_GIAO_HANGs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -2447,30 +2423,6 @@ namespace MVCDrugStoreManager.Models
 			this.SendPropertyChanging();
 			entity.KHACH_HANG = null;
 		}
-		
-		private void attach_HOA_DONs(HOA_DON entity)
-		{
-			this.SendPropertyChanging();
-			entity.KHACH_HANG = this;
-		}
-		
-		private void detach_HOA_DONs(HOA_DON entity)
-		{
-			this.SendPropertyChanging();
-			entity.KHACH_HANG = null;
-		}
-		
-		private void attach_PHIEU_GIAO_HANGs(PHIEU_GIAO_HANG entity)
-		{
-			this.SendPropertyChanging();
-			entity.KHACH_HANG = this;
-		}
-		
-		private void detach_PHIEU_GIAO_HANGs(PHIEU_GIAO_HANG entity)
-		{
-			this.SendPropertyChanging();
-			entity.KHACH_HANG = null;
-		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LOAI_NV")]
@@ -2479,7 +2431,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaLoaiNV;
+		private int _MaLoaiNV;
 		
 		private string _LoaiNV;
 		
@@ -2489,7 +2441,7 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaLoaiNVChanging(string value);
+    partial void OnMaLoaiNVChanging(int value);
     partial void OnMaLoaiNVChanged();
     partial void OnLoaiNVChanging(string value);
     partial void OnLoaiNVChanged();
@@ -2501,8 +2453,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiNV", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaLoaiNV
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiNV", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaLoaiNV
 		{
 			get
 			{
@@ -2541,7 +2493,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_NHAN_VIENs", ThisKey="MaLoaiNV", OtherKey="MaLoaiNV")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_NHAN_VIENs", ThisKey="MaLoaiNV", OtherKey="LoaiNV")]
 		public EntitySet<NHAN_VIEN> NHAN_VIENs
 		{
 			get
@@ -2615,7 +2567,7 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiSP", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiSP", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaLoaiSP
 		{
 			get
@@ -2635,7 +2587,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenLoai", DbType="NVarChar(30)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenLoai", DbType="NVarChar(50)")]
 		public string TenLoai
 		{
 			get
@@ -2707,15 +2659,13 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaNV;
+		private int _MaNV;
 		
 		private string _TenNV;
 		
 		private string _SDT;
 		
-		private string _CaTruc;
-		
-		private string _MaLoaiNV;
+		private System.Nullable<int> _LoaiNV;
 		
 		private EntitySet<PHIEU_GIAO_HANG> _PHIEU_GIAO_HANGs;
 		
@@ -2725,16 +2675,14 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaNVChanging(string value);
+    partial void OnMaNVChanging(int value);
     partial void OnMaNVChanged();
     partial void OnTenNVChanging(string value);
     partial void OnTenNVChanged();
     partial void OnSDTChanging(string value);
     partial void OnSDTChanged();
-    partial void OnCaTrucChanging(string value);
-    partial void OnCaTrucChanged();
-    partial void OnMaLoaiNVChanging(string value);
-    partial void OnMaLoaiNVChanged();
+    partial void OnLoaiNVChanging(System.Nullable<int> value);
+    partial void OnLoaiNVChanged();
     #endregion
 		
 		public NHAN_VIEN()
@@ -2744,8 +2692,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaNV
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaNV
 		{
 			get
 			{
@@ -2784,7 +2732,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="VarChar(15)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="VarChar(50)")]
 		public string SDT
 		{
 			get
@@ -2804,46 +2752,26 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CaTruc", DbType="NVarChar(50)")]
-		public string CaTruc
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoaiNV", DbType="Int")]
+		public System.Nullable<int> LoaiNV
 		{
 			get
 			{
-				return this._CaTruc;
+				return this._LoaiNV;
 			}
 			set
 			{
-				if ((this._CaTruc != value))
-				{
-					this.OnCaTrucChanging(value);
-					this.SendPropertyChanging();
-					this._CaTruc = value;
-					this.SendPropertyChanged("CaTruc");
-					this.OnCaTrucChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiNV", DbType="VarChar(10)")]
-		public string MaLoaiNV
-		{
-			get
-			{
-				return this._MaLoaiNV;
-			}
-			set
-			{
-				if ((this._MaLoaiNV != value))
+				if ((this._LoaiNV != value))
 				{
 					if (this._LOAI_NV.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnMaLoaiNVChanging(value);
+					this.OnLoaiNVChanging(value);
 					this.SendPropertyChanging();
-					this._MaLoaiNV = value;
-					this.SendPropertyChanged("MaLoaiNV");
-					this.OnMaLoaiNVChanged();
+					this._LoaiNV = value;
+					this.SendPropertyChanged("LoaiNV");
+					this.OnLoaiNVChanged();
 				}
 			}
 		}
@@ -2861,7 +2789,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_LOAI_NV", ThisKey="MaLoaiNV", OtherKey="MaLoaiNV", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_LOAI_NV", ThisKey="LoaiNV", OtherKey="MaLoaiNV", IsForeignKey=true)]
 		public LOAI_NV LOAI_NV
 		{
 			get
@@ -2884,11 +2812,11 @@ namespace MVCDrugStoreManager.Models
 					if ((value != null))
 					{
 						value.NHAN_VIENs.Add(this);
-						this._MaLoaiNV = value.MaLoaiNV;
+						this._LoaiNV = value.MaLoaiNV;
 					}
 					else
 					{
-						this._MaLoaiNV = default(string);
+						this._LoaiNV = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("LOAI_NV");
 				}
@@ -2936,15 +2864,17 @@ namespace MVCDrugStoreManager.Models
 		
 		private string _MaPGH;
 		
-		private string _MaNV;
+		private System.Nullable<int> _MaHD;
 		
-		private string _MaKH;
+		private System.Nullable<int> _MaNV;
 		
 		private System.Nullable<System.DateTime> _NgayGiaoHang;
 		
+		private string _DiaChiGiao;
+		
 		private EntitySet<CHI_TIET_PHIEU_GIAO_HANG> _CHI_TIET_PHIEU_GIAO_HANGs;
 		
-		private EntityRef<KHACH_HANG> _KHACH_HANG;
+		private EntityRef<HOA_DON> _HOA_DON;
 		
 		private EntityRef<NHAN_VIEN> _NHAN_VIEN;
 		
@@ -2954,23 +2884,25 @@ namespace MVCDrugStoreManager.Models
     partial void OnCreated();
     partial void OnMaPGHChanging(string value);
     partial void OnMaPGHChanged();
-    partial void OnMaNVChanging(string value);
+    partial void OnMaHDChanging(System.Nullable<int> value);
+    partial void OnMaHDChanged();
+    partial void OnMaNVChanging(System.Nullable<int> value);
     partial void OnMaNVChanged();
-    partial void OnMaKHChanging(string value);
-    partial void OnMaKHChanged();
     partial void OnNgayGiaoHangChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayGiaoHangChanged();
+    partial void OnDiaChiGiaoChanging(string value);
+    partial void OnDiaChiGiaoChanged();
     #endregion
 		
 		public PHIEU_GIAO_HANG()
 		{
 			this._CHI_TIET_PHIEU_GIAO_HANGs = new EntitySet<CHI_TIET_PHIEU_GIAO_HANG>(new Action<CHI_TIET_PHIEU_GIAO_HANG>(this.attach_CHI_TIET_PHIEU_GIAO_HANGs), new Action<CHI_TIET_PHIEU_GIAO_HANG>(this.detach_CHI_TIET_PHIEU_GIAO_HANGs));
-			this._KHACH_HANG = default(EntityRef<KHACH_HANG>);
+			this._HOA_DON = default(EntityRef<HOA_DON>);
 			this._NHAN_VIEN = default(EntityRef<NHAN_VIEN>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPGH
 		{
 			get
@@ -2990,8 +2922,32 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="VarChar(20)")]
-		public string MaNV
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaHD", DbType="Int")]
+		public System.Nullable<int> MaHD
+		{
+			get
+			{
+				return this._MaHD;
+			}
+			set
+			{
+				if ((this._MaHD != value))
+				{
+					if (this._HOA_DON.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaHDChanging(value);
+					this.SendPropertyChanging();
+					this._MaHD = value;
+					this.SendPropertyChanged("MaHD");
+					this.OnMaHDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNV", DbType="Int")]
+		public System.Nullable<int> MaNV
 		{
 			get
 			{
@@ -3010,30 +2966,6 @@ namespace MVCDrugStoreManager.Models
 					this._MaNV = value;
 					this.SendPropertyChanged("MaNV");
 					this.OnMaNVChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(10)")]
-		public string MaKH
-		{
-			get
-			{
-				return this._MaKH;
-			}
-			set
-			{
-				if ((this._MaKH != value))
-				{
-					if (this._KHACH_HANG.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMaKHChanging(value);
-					this.SendPropertyChanging();
-					this._MaKH = value;
-					this.SendPropertyChanged("MaKH");
-					this.OnMaKHChanged();
 				}
 			}
 		}
@@ -3058,6 +2990,26 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChiGiao", DbType="NVarChar(50)")]
+		public string DiaChiGiao
+		{
+			get
+			{
+				return this._DiaChiGiao;
+			}
+			set
+			{
+				if ((this._DiaChiGiao != value))
+				{
+					this.OnDiaChiGiaoChanging(value);
+					this.SendPropertyChanging();
+					this._DiaChiGiao = value;
+					this.SendPropertyChanged("DiaChiGiao");
+					this.OnDiaChiGiaoChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHIEU_GIAO_HANG_CHI_TIET_PHIEU_GIAO_HANG", Storage="_CHI_TIET_PHIEU_GIAO_HANGs", ThisKey="MaPGH", OtherKey="MaPGH")]
 		public EntitySet<CHI_TIET_PHIEU_GIAO_HANG> CHI_TIET_PHIEU_GIAO_HANGs
 		{
@@ -3071,36 +3023,36 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KHACH_HANG_PHIEU_GIAO_HANG", Storage="_KHACH_HANG", ThisKey="MaKH", OtherKey="CMND", IsForeignKey=true)]
-		public KHACH_HANG KHACH_HANG
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HOA_DON_PHIEU_GIAO_HANG", Storage="_HOA_DON", ThisKey="MaHD", OtherKey="MaHD", IsForeignKey=true)]
+		public HOA_DON HOA_DON
 		{
 			get
 			{
-				return this._KHACH_HANG.Entity;
+				return this._HOA_DON.Entity;
 			}
 			set
 			{
-				KHACH_HANG previousValue = this._KHACH_HANG.Entity;
+				HOA_DON previousValue = this._HOA_DON.Entity;
 				if (((previousValue != value) 
-							|| (this._KHACH_HANG.HasLoadedOrAssignedValue == false)))
+							|| (this._HOA_DON.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._KHACH_HANG.Entity = null;
+						this._HOA_DON.Entity = null;
 						previousValue.PHIEU_GIAO_HANGs.Remove(this);
 					}
-					this._KHACH_HANG.Entity = value;
+					this._HOA_DON.Entity = value;
 					if ((value != null))
 					{
 						value.PHIEU_GIAO_HANGs.Add(this);
-						this._MaKH = value.CMND;
+						this._MaHD = value.MaHD;
 					}
 					else
 					{
-						this._MaKH = default(string);
+						this._MaHD = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("KHACH_HANG");
+					this.SendPropertyChanged("HOA_DON");
 				}
 			}
 		}
@@ -3132,7 +3084,7 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaNV = default(string);
+						this._MaNV = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("NHAN_VIEN");
 				}
