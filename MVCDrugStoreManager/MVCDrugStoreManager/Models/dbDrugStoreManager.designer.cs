@@ -220,7 +220,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<int> _SoLuong;
+		private System.Nullable<decimal> _SoLuong;
 		
 		private EntityRef<SAN_PHAM> _SAN_PHAM;
 		
@@ -240,7 +240,7 @@ namespace MVCDrugStoreManager.Models
     partial void OnMaSPChanged();
     partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanging(System.Nullable<decimal> value);
     partial void OnSoLuongChanged();
     #endregion
 		
@@ -344,8 +344,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Money")]
+		public System.Nullable<decimal> SoLuong
 		{
 			get
 			{
@@ -497,9 +497,11 @@ namespace MVCDrugStoreManager.Models
 		
 		private string _TenSP;
 		
-		private string _LoaiSP;
+		private System.Nullable<int> _MaLoaiSP;
 		
 		private System.Nullable<int> _DVT;
+		
+		private System.Nullable<int> _SoLuongCon;
 		
 		private System.Nullable<decimal> _DonGia;
 		
@@ -525,10 +527,12 @@ namespace MVCDrugStoreManager.Models
     partial void OnMaSPChanged();
     partial void OnTenSPChanging(string value);
     partial void OnTenSPChanged();
-    partial void OnLoaiSPChanging(string value);
-    partial void OnLoaiSPChanged();
+    partial void OnMaLoaiSPChanging(System.Nullable<int> value);
+    partial void OnMaLoaiSPChanged();
     partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
+    partial void OnSoLuongConChanging(System.Nullable<int> value);
+    partial void OnSoLuongConChanged();
     partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
     partial void OnImagesChanging(string value);
@@ -587,26 +591,26 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoaiSP", DbType="VarChar(50)")]
-		public string LoaiSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiSP", DbType="Int")]
+		public System.Nullable<int> MaLoaiSP
 		{
 			get
 			{
-				return this._LoaiSP;
+				return this._MaLoaiSP;
 			}
 			set
 			{
-				if ((this._LoaiSP != value))
+				if ((this._MaLoaiSP != value))
 				{
 					if (this._LOAI_SAN_PHAM.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnLoaiSPChanging(value);
+					this.OnMaLoaiSPChanging(value);
 					this.SendPropertyChanging();
-					this._LoaiSP = value;
-					this.SendPropertyChanged("LoaiSP");
-					this.OnLoaiSPChanged();
+					this._MaLoaiSP = value;
+					this.SendPropertyChanged("MaLoaiSP");
+					this.OnMaLoaiSPChanged();
 				}
 			}
 		}
@@ -631,6 +635,26 @@ namespace MVCDrugStoreManager.Models
 					this._DVT = value;
 					this.SendPropertyChanged("DVT");
 					this.OnDVTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuongCon", DbType="Int")]
+		public System.Nullable<int> SoLuongCon
+		{
+			get
+			{
+				return this._SoLuongCon;
+			}
+			set
+			{
+				if ((this._SoLuongCon != value))
+				{
+					this.OnSoLuongConChanging(value);
+					this.SendPropertyChanging();
+					this._SoLuongCon = value;
+					this.SendPropertyChanged("SoLuongCon");
+					this.OnSoLuongConChanged();
 				}
 			}
 		}
@@ -768,7 +792,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_SAN_PHAM_SAN_PHAM", Storage="_LOAI_SAN_PHAM", ThisKey="LoaiSP", OtherKey="MaLoaiSP", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_SAN_PHAM_SAN_PHAM", Storage="_LOAI_SAN_PHAM", ThisKey="MaLoaiSP", OtherKey="MaLoaiSP", IsForeignKey=true)]
 		public LOAI_SAN_PHAM LOAI_SAN_PHAM
 		{
 			get
@@ -791,11 +815,11 @@ namespace MVCDrugStoreManager.Models
 					if ((value != null))
 					{
 						value.SAN_PHAMs.Add(this);
-						this._LoaiSP = value.MaLoaiSP;
+						this._MaLoaiSP = value.MaLoaiSP;
 					}
 					else
 					{
-						this._LoaiSP = default(string);
+						this._MaLoaiSP = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("LOAI_SAN_PHAM");
 				}
@@ -865,15 +889,15 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaCTPGH;
+		private int _MaCTPGH;
 		
-		private string _MaPGH;
+		private System.Nullable<int> _MaPGH;
 		
 		private System.Nullable<int> _MaSP;
 		
 		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<int> _SoLuong;
+		private System.Nullable<decimal> _SoLuong;
 		
 		private System.Nullable<decimal> _DonGia;
 		
@@ -889,15 +913,15 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaCTPGHChanging(string value);
+    partial void OnMaCTPGHChanging(int value);
     partial void OnMaCTPGHChanged();
-    partial void OnMaPGHChanging(string value);
+    partial void OnMaPGHChanging(System.Nullable<int> value);
     partial void OnMaPGHChanged();
     partial void OnMaSPChanging(System.Nullable<int> value);
     partial void OnMaSPChanged();
     partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanging(System.Nullable<decimal> value);
     partial void OnSoLuongChanged();
     partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
@@ -913,8 +937,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTPGH", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaCTPGH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaCTPGH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaCTPGH
 		{
 			get
 			{
@@ -933,8 +957,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(50)")]
-		public string MaPGH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="Int")]
+		public System.Nullable<int> MaPGH
 		{
 			get
 			{
@@ -1005,8 +1029,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Money")]
+		public System.Nullable<decimal> SoLuong
 		{
 			get
 			{
@@ -1160,7 +1184,7 @@ namespace MVCDrugStoreManager.Models
 					}
 					else
 					{
-						this._MaPGH = default(string);
+						this._MaPGH = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("PHIEU_GIAO_HANG");
 				}
@@ -1202,11 +1226,13 @@ namespace MVCDrugStoreManager.Models
 		
 		private System.Nullable<int> _DVT;
 		
-		private System.Nullable<int> _SoLuong;
+		private System.Nullable<decimal> _SoLuong;
 		
 		private System.Nullable<decimal> _DonGia;
 		
 		private System.Nullable<decimal> _ThanhTien;
+		
+		private System.Nullable<decimal> _TongTien;
 		
 		private EntityRef<SAN_PHAM> _SAN_PHAM;
 		
@@ -1226,12 +1252,14 @@ namespace MVCDrugStoreManager.Models
     partial void OnMaSPChanged();
     partial void OnDVTChanging(System.Nullable<int> value);
     partial void OnDVTChanged();
-    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanging(System.Nullable<decimal> value);
     partial void OnSoLuongChanged();
     partial void OnDonGiaChanging(System.Nullable<decimal> value);
     partial void OnDonGiaChanged();
     partial void OnThanhTienChanging(System.Nullable<decimal> value);
     partial void OnThanhTienChanged();
+    partial void OnTongTienChanging(System.Nullable<decimal> value);
+    partial void OnTongTienChanged();
     #endregion
 		
 		public CT_HOA_DON()
@@ -1334,8 +1362,8 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Money")]
+		public System.Nullable<decimal> SoLuong
 		{
 			get
 			{
@@ -1390,6 +1418,26 @@ namespace MVCDrugStoreManager.Models
 					this._ThanhTien = value;
 					this.SendPropertyChanged("ThanhTien");
 					this.OnThanhTienChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TongTien", DbType="Money")]
+		public System.Nullable<decimal> TongTien
+		{
+			get
+			{
+				return this._TongTien;
+			}
+			set
+			{
+				if ((this._TongTien != value))
+				{
+					this.OnTongTienChanging(value);
+					this.SendPropertyChanging();
+					this._TongTien = value;
+					this.SendPropertyChanged("TongTien");
+					this.OnTongTienChanged();
 				}
 			}
 		}
@@ -1685,7 +1733,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLapDon", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLapDon", DbType="Date")]
 		public System.Nullable<System.DateTime> NgayLapDon
 		{
 			get
@@ -2094,7 +2142,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLapHD", DbType="DateTime")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayLapHD", DbType="Date")]
 		public System.Nullable<System.DateTime> NgayLapHD
 		{
 			get
@@ -2493,7 +2541,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_NHAN_VIENs", ThisKey="MaLoaiNV", OtherKey="LoaiNV")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_NHAN_VIENs", ThisKey="MaLoaiNV", OtherKey="MaLoaiNV")]
 		public EntitySet<NHAN_VIEN> NHAN_VIENs
 		{
 			get
@@ -2545,7 +2593,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaLoaiSP;
+		private int _MaLoaiSP;
 		
 		private string _TenLoai;
 		
@@ -2555,7 +2603,7 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaLoaiSPChanging(string value);
+    partial void OnMaLoaiSPChanging(int value);
     partial void OnMaLoaiSPChanged();
     partial void OnTenLoaiChanging(string value);
     partial void OnTenLoaiChanged();
@@ -2567,8 +2615,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiSP", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaLoaiSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiSP", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaLoaiSP
 		{
 			get
 			{
@@ -2607,7 +2655,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_SAN_PHAM_SAN_PHAM", Storage="_SAN_PHAMs", ThisKey="MaLoaiSP", OtherKey="LoaiSP")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_SAN_PHAM_SAN_PHAM", Storage="_SAN_PHAMs", ThisKey="MaLoaiSP", OtherKey="MaLoaiSP")]
 		public EntitySet<SAN_PHAM> SAN_PHAMs
 		{
 			get
@@ -2665,7 +2713,7 @@ namespace MVCDrugStoreManager.Models
 		
 		private string _SDT;
 		
-		private System.Nullable<int> _LoaiNV;
+		private System.Nullable<int> _MaLoaiNV;
 		
 		private EntitySet<PHIEU_GIAO_HANG> _PHIEU_GIAO_HANGs;
 		
@@ -2681,8 +2729,8 @@ namespace MVCDrugStoreManager.Models
     partial void OnTenNVChanged();
     partial void OnSDTChanging(string value);
     partial void OnSDTChanged();
-    partial void OnLoaiNVChanging(System.Nullable<int> value);
-    partial void OnLoaiNVChanged();
+    partial void OnMaLoaiNVChanging(System.Nullable<int> value);
+    partial void OnMaLoaiNVChanged();
     #endregion
 		
 		public NHAN_VIEN()
@@ -2752,26 +2800,26 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LoaiNV", DbType="Int")]
-		public System.Nullable<int> LoaiNV
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLoaiNV", DbType="Int")]
+		public System.Nullable<int> MaLoaiNV
 		{
 			get
 			{
-				return this._LoaiNV;
+				return this._MaLoaiNV;
 			}
 			set
 			{
-				if ((this._LoaiNV != value))
+				if ((this._MaLoaiNV != value))
 				{
 					if (this._LOAI_NV.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnLoaiNVChanging(value);
+					this.OnMaLoaiNVChanging(value);
 					this.SendPropertyChanging();
-					this._LoaiNV = value;
-					this.SendPropertyChanged("LoaiNV");
-					this.OnLoaiNVChanged();
+					this._MaLoaiNV = value;
+					this.SendPropertyChanged("MaLoaiNV");
+					this.OnMaLoaiNVChanged();
 				}
 			}
 		}
@@ -2789,7 +2837,7 @@ namespace MVCDrugStoreManager.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_LOAI_NV", ThisKey="LoaiNV", OtherKey="MaLoaiNV", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAI_NV_NHAN_VIEN", Storage="_LOAI_NV", ThisKey="MaLoaiNV", OtherKey="MaLoaiNV", IsForeignKey=true)]
 		public LOAI_NV LOAI_NV
 		{
 			get
@@ -2812,11 +2860,11 @@ namespace MVCDrugStoreManager.Models
 					if ((value != null))
 					{
 						value.NHAN_VIENs.Add(this);
-						this._LoaiNV = value.MaLoaiNV;
+						this._MaLoaiNV = value.MaLoaiNV;
 					}
 					else
 					{
-						this._LoaiNV = default(Nullable<int>);
+						this._MaLoaiNV = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("LOAI_NV");
 				}
@@ -2862,15 +2910,13 @@ namespace MVCDrugStoreManager.Models
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _MaPGH;
+		private int _MaPGH;
 		
 		private System.Nullable<int> _MaHD;
 		
 		private System.Nullable<int> _MaNV;
 		
 		private System.Nullable<System.DateTime> _NgayGiaoHang;
-		
-		private string _DiaChiGiao;
 		
 		private EntitySet<CHI_TIET_PHIEU_GIAO_HANG> _CHI_TIET_PHIEU_GIAO_HANGs;
 		
@@ -2882,7 +2928,7 @@ namespace MVCDrugStoreManager.Models
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnMaPGHChanging(string value);
+    partial void OnMaPGHChanging(int value);
     partial void OnMaPGHChanged();
     partial void OnMaHDChanging(System.Nullable<int> value);
     partial void OnMaHDChanged();
@@ -2890,8 +2936,6 @@ namespace MVCDrugStoreManager.Models
     partial void OnMaNVChanged();
     partial void OnNgayGiaoHangChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayGiaoHangChanged();
-    partial void OnDiaChiGiaoChanging(string value);
-    partial void OnDiaChiGiaoChanged();
     #endregion
 		
 		public PHIEU_GIAO_HANG()
@@ -2902,8 +2946,8 @@ namespace MVCDrugStoreManager.Models
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="VarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaPGH
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPGH", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MaPGH
 		{
 			get
 			{
@@ -2986,26 +3030,6 @@ namespace MVCDrugStoreManager.Models
 					this._NgayGiaoHang = value;
 					this.SendPropertyChanged("NgayGiaoHang");
 					this.OnNgayGiaoHangChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChiGiao", DbType="NVarChar(50)")]
-		public string DiaChiGiao
-		{
-			get
-			{
-				return this._DiaChiGiao;
-			}
-			set
-			{
-				if ((this._DiaChiGiao != value))
-				{
-					this.OnDiaChiGiaoChanging(value);
-					this.SendPropertyChanging();
-					this._DiaChiGiao = value;
-					this.SendPropertyChanged("DiaChiGiao");
-					this.OnDiaChiGiaoChanged();
 				}
 			}
 		}
