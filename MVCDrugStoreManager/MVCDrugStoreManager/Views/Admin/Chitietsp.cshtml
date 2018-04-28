@@ -1,0 +1,74 @@
+﻿@model MVCDrugStoreManager.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Chitietsp";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>THÔNG TIN CHI TIẾT</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSP)
+        </dd>
+
+        <dt>
+            Loại sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAI_SAN_PHAM.TenLoai)
+        </dd>
+
+        <dt>
+            Đơn vị tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DVT1.TenDVT)
+        </dd>
+
+        <dt>
+            Số lượng:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongCon)
+        </dd>
+
+        <dt>
+            Đơn giá
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}", Model.DonGia)$$
+        </dd>
+
+        <dt>
+            Ảnh minh họa:
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/images/"+ Model.Images)" width="120px" />
+        </dd>
+
+        <dt>
+            Ngày cập nhật:
+        </dt>
+
+        <dd>
+            @String.Format("{0:MM/dd/yyyy}", Model.Ngaycapnhat)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("SỬA", "Edit", new { id = Model.MaSP }) |
+    @Html.ActionLink("TRỞ VỀ", "Drug")
+</p>
