@@ -1,0 +1,68 @@
+﻿@using MVCDrugStoreManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCDrugStoreManager.Models.SAN_PHAM>
+
+@{
+    ViewBag.Title = "Drug";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ THÔNG TIN SẢN PHẨM</h2>
+
+<p>
+    @Html.ActionLink("THÊM SẢN PHẨM", "Themmoisp")
+</p>
+<table class="table" border="1">
+    <tr>
+        <th style="width:200px"> Tên thuốc </th>
+        <th style="width:200px"> Loại thuốc </th>
+        <th style="width:200px"> Đơn vị tính </th>
+        <th style="width:200px"> Số lượng  </th>
+        <th style="width:200px"> Đơn giá </th>
+        <th style="width:200px"> Ảnh minh họa </th>
+        <th style="width:200px"> Ngày cập nhật </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LOAI_SAN_PHAM.TenLoai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DVT1.TenDVT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongTon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGia)
+        </td>
+        <td>
+            <img src="@Url.Content("~/images/" + item.Images)" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayCapNhat)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Suasp", new { id = item.MaSP }) |
+            @Html.ActionLink("Chi tiết", "Chitietsp", new { id = item.MaSP }) |
+            @Html.ActionLink("Xóa", "Xoasp", new { id = item.MaSP })
+        </td>
+    </tr>
+    }
+</table>
+@* Tao lien ket phan cac trang *@
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="MenuTrang">
+
+    @Html.PagedListPager(Model, page => Url.Action("Drug", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
