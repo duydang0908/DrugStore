@@ -40,13 +40,14 @@ create table LOAI_SAN_PHAM
 
 create table SAN_PHAM
 (
-	MaSP int primary key,
+	MaSP int identity(1,1) primary key,
 	TenSP nvarchar(50),
 	MaLoaiSP int foreign key references LOAI_SAN_PHAM(MaLoaiSP),
 	DVT int foreign key references DVT(MaDVT),
 	SoLuongTon int,
 	DonGia money,
 	NgayCapNhat datetime,
+	MoTa nvarchar(max),
 	Images nvarchar(50),
 )
 
