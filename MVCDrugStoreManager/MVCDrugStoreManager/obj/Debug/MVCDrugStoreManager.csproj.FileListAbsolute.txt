@@ -291,7 +291,3 @@ C:\Users\duyda\OneDrive\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugSt
 C:\Users\duyda\OneDrive\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CopyComplete
 C:\Users\duyda\OneDrive\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.dll
 C:\Users\duyda\OneDrive\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.pdb
-C:\Users\khai\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csprojResolveAssemblyReference.cache
-C:\Users\khai\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CoreCompileInputs.cache
-C:\Users\khai\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.dll
-C:\Users\khai\Documents\GitHub\DrugStore\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.pdb
