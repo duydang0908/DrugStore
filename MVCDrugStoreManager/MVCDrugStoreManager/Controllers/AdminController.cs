@@ -128,7 +128,7 @@ namespace MVCDrugStoreManager.Controllers
                 s.TenSP = sp.TenSP;
                 s.MaLoaiSP = sp.MaLoaiSP;
                 s.DVT = sp.DVT;
-                s.SoLuongCon = sp.SoLuongCon;
+                s.SoLuongTon = sp.SoLuongTon;
                 s.DonGia = sp.DonGia;
                 s.Images = sp.Images;
                 s.Ngaycapnhat = sp.Ngaycapnhat;
