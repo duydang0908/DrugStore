@@ -1,0 +1,49 @@
+﻿<style type="text/css">
+    #Datmua a {
+        clear: both;
+        background-color: red;
+        color: white;
+        width: 120px;
+        height: 35px;
+        display: block;
+        float: right;
+        text-align: center;
+        padding-top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #Datmua a:hover {
+            background-color: gray;
+            color: red;
+        }
+</style>
+@using MVCDrugStoreManager.Models
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2> Thông Tin Chi Tiết Sản Phẩm </h2>
+@*<h3> Tên sản phẩm: @Model.TenSP</h3>*@
+<div>
+    <div style="width:40%; float: left;border-left:dotted 1px;border-color:azure">
+        <img src="~/images/@Model.Images" width="100%" />
+    </div>
+    <div style="width:60%;float:left;padding:10px">
+        <h3 style="font-weight:bold;color:red">Tên sản phẩm:@Model.TenSP</h3>
+        <p style="text-align:justify"><span style="font-weight:bold">Loại sản phẩm: </span>@Model.LOAI_SAN_PHAM.TenLoai</p>
+        <p style="text-align:justify"><span style="font-weight:bold">Mô tả: </span>@Model.MoTa</p>
+        <p style="text-align:justify"><span style="font-weight:bold; color:red; font-size:16pt">Giá bán: </span>@Model.DonGia VND</p>
+    </div>
+    <div>
+        <div id="Datmua">
+            <a href="@Url.Action("ThemGiohang","GioHang",new {@iMaSP=@Model.MaSP,@strURL=Request.Url.ToString() }) ">
+            Đặt mua
+            </a>
+        </div>
+    </div>
+</div>
+
+

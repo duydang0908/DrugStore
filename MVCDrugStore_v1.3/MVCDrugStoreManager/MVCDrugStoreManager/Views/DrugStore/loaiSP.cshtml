@@ -1,0 +1,9 @@
+﻿@model IEnumerable<MVCDrugStoreManager.Models.LOAI_SAN_PHAM>
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("spTheoLoai", "DrugStore",new { id = item.MaLoaiSP })" class="list-group-item">
+            @item.TenLoai
+        </a>
+    }
+</div>
