@@ -1,0 +1,59 @@
+﻿@using MVCDrugStoreManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCDrugStoreManager.Models.NHAN_VIEN>
+@{
+    ViewBag.Title = "Employee";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold">Quản lý nhân viên</h1>
+
+<button>
+    @Html.ActionLink("Create New", "Create")
+</button>
+<table class="" border="1" style="width:1150px;text-align:center">
+    <tr>
+        <th>
+            Tên nhân viên
+        </th>
+        <th>
+            Số điện thoại
+        </th>
+        <th>
+            loại nhân viên
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNV)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoaiNV)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaNV }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MaNV }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaNV })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="bottom">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Employee", new { page = page }))
+    </div>
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
