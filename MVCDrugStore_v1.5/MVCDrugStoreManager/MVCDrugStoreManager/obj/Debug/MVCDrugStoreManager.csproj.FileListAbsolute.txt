@@ -1,0 +1,297 @@
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\ApplicationInsights.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.pdb
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.AppContext.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Collections.Immutable.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Console.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.Process.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Compression.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Pipes.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Reflection.Metadata.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.AccessControl.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Claims.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Threading.Thread.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.ValueTuple.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.rsp
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe.config
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.Web.Infrastructure.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\WebGrease.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.pdb
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CoreCompileInputs.cache
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CopyComplete
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.pdb
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\ApplicationInsights.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.pdb
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.rsp
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.rsp
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.AppContext.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Console.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Pipes.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Claims.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Threading.Thread.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.rsp
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\WebGrease.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.pdb
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csprojResolveAssemblyReference.cache
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CoreCompileInputs.cache
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CopyComplete
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.pdb
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.dll
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.xml
+C:\Users\khai\Desktop\CNPMnc\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\ApplicationInsights.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\MVCDrugStoreManager.pdb
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.exe.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csc.rsp
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.exe.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\csi.rsp
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.AppContext.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Console.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Compression.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Claims.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.ValueTuple.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.exe.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\vbc.rsp
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\WebGrease.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\EntityFramework.SqlServer.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Helpers.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Mvc.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Optimization.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.Razor.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\System.Web.WebPages.Razor.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Antlr3.Runtime.pdb
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Newtonsoft.Json.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\Microsoft.AI.Web.xml
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csprojResolveAssemblyReference.cache
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CoreCompileInputs.cache
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csproj.CopyComplete
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.dll
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.pdb
+C:\Users\Cookie Ank\Desktop\MVCDrugStoreManager\MVCDrugStoreManager\bin\roslyn\System.Collections.Immutable.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.dll
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\bin\PagedList.Mvc.xml
+D:\Bài Tập Công Nghê Thông Tin\Năm 3\HKII\Công nghệ phần mềm nâng cao\Lý thuyết\MVCDrugStoreManager\MVCDrugStoreManager\obj\Debug\MVCDrugStoreManager.csprojResolveAssemblyReference.cache
