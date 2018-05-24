@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MVCDrugStoreManager.Models.KHACH_HANG>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold">Quản lý thông tin khách hàng</h1>
+
+<table class="" border="1" style="width:1150px; text-align:center"> 
+    <tr>
+        <th style="width:200px">
+            Tên khách hàng
+        </th>
+        <th style="width:200px">
+            Địa chỉ
+        </th>
+        <th style="width:200px">
+            SĐT
+        </th>
+        <th style="width:200px">
+            Email
+        </th>
+        <th style="width:200px">
+            IDLogin
+        </th>
+        <th style="width:200px"></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenKH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDLogin)
+        </td>
+        <td>
+            @Html.ActionLink("Chi tiết", "Details", new { id=item.MaKH }) |
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaKH })
+        </td>
+    </tr>
+}
+
+</table>

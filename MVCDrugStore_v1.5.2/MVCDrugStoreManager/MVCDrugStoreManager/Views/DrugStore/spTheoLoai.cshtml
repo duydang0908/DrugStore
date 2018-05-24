@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MVCDrugStoreManager.Models.SAN_PHAM>
+@{
+    ViewBag.Title = "spTheoLoai";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h1 style="text-align:center; font-weight:bold">&bullet; Products by type &bullet;</h1>
+<div class="grid">
+    <div class="row">
+        @foreach (var pro in Model)
+        {<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="txthover">
+                    <img src="~/images/@pro.Images" alt="car1" style="width:350px;height:350px">
+                    <div class="txtcontent">
+                        <div class="stars">
+                            <div class="glyphicon glyphicon-star"></div>
+                            <div class="glyphicon glyphicon-star"></div>
+                            <div class="glyphicon glyphicon-star"></div>
+                        </div>
+                        <div class="simpletxt">
+                            <h3 class="name">@pro.TenSP</h3>
+                            <p>
+                                @pro.MoTa
+                            </p>
+                            <h4 class="price">$ @String.Format("{0:0.00}", pro.DonGia)</h4>
+                            <a href="@Url.Action("Details", "DrugStore", new { id = pro.MaSP })" class="list-group-item" style="width:100px; text-align:center; float:left; background-color:white; font-weight:bold; color:black">
+                                Chi tiết
+                            </a>
+                            <a href="@Url.Action("ThemGioHang", "GioHang", new { @iMaSP = pro.MaSP, @strURL=Request.Url.ToString() }) " class="list-group-item" style="width:100px; text-align:center; float:right; background-color:limegreen; font-weight:bold; color:black">
+                                Đặt mua
+                            </a>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="stars2">
+                            <div class="glyphicon glyphicon-star"></div>
+                            <div class="glyphicon glyphicon-star"></div>
+                            <div class="glyphicon glyphicon-star"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

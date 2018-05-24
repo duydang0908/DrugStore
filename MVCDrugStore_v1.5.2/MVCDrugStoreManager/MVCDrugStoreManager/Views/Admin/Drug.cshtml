@@ -1,0 +1,88 @@
+﻿@using MVCDrugStoreManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCDrugStoreManager.Models.SAN_PHAM>
+
+@{
+    /**/
+
+    ViewBag.Title = "Drug";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@helper Truncate(string input, int length)
+    {
+        /**/
+        if (input.Length < length)
+        {
+            @input
+        }
+        else
+        {
+            @input.Substring(0, length)<text>...</text>
+        }
+}
+
+<h1 style="font-weight:bold">Quản lý thông tin thuốc</h1>
+<button>
+    @Html.ActionLink("Thêm mới", "Themmoisp")
+</button>
+<hr>
+<table class="" border="1" style="width:1150px; text-align:center">
+    <tr>
+        <th style="width:200px"> Tên thuốc </th>
+        <th style="width:200px"> Loại thuốc </th>
+        <th style="width:300px"> Đơn vị tính </th>
+        <th style="width:200px"> Số lượng  </th>
+        <th style="width:250px"> Đơn giá </th>
+        <th style="width:200px"> Ngày cập nhật </th>
+        <th style="width:200px"> Mô tả </th>
+        <th style="width:200px"> Ảnh minh họa </th>
+        <th style="width:600px"></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LOAI_SAN_PHAM.TenLoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DVT1.TenDVT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuongTon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayCapNhat)
+            </td>
+            <td>
+                @Truncate(item.MoTa, 100)
+            </td>
+            <td>
+                <img src="@Url.Content("~/images/" + item.Images)" style="width:150px;height:150px;" />
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Suasp", new { id = item.MaSP }) |
+                @Html.ActionLink("Chi tiết", "Chitietsp", new { id = item.MaSP }) |
+                @Html.ActionLink("Xóa", "Xoasp", new { id = item.MaSP })
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="bottom">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    <div class="MenuTrang">
+        @Html.PagedListPager(Model, page => Url.Action("Drug", new { page = page }))
+    </div>
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>
