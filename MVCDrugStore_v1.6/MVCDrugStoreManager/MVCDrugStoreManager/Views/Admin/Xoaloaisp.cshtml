@@ -1,0 +1,38 @@
+﻿@model MVCDrugStoreManager.Models.LOAI_SAN_PHAM
+
+@{
+    ViewBag.Title = "Xoaloaisp";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center; font-weight:bold">Xóa loại sản phẩm</h1>
+<h2 style="text-align:center; font-weight:bold">Bạn có muốn xóa loại sản phẩm này?</h2>
+<div>
+    <dl class="dl-horizontal">
+        @*Mã loại*@
+        <dt>
+            Mã loại :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MaLoaiSP)
+        </dd>
+        @*Tên loại*@
+        <dt>
+            Tên loại :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenLoai)
+        </dd>
+        <dd>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" /> |
+                    <button>@Html.ActionLink("Back to List", "Category")</button>
+                </div>
+            }
+        </dd>
+    </dl>
+</div>

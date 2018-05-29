@@ -1,0 +1,80 @@
+﻿@model MVCDrugStoreManager.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Xoasp";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center; font-weight:bold">XÓA SẢN PHẨM</h1>
+
+<h2 style="text-align:center; font-weight:bold">Bạn có muốn xóa sản phẩm này ?</h2>
+<div>
+    <div style="padding-left:100px ;width:40%; float: left;border-left:dotted 1px;border-color:azure">
+        <img src="~/images/@Model.Images" style="width:350px ; height:300px" />
+    </div>
+    <div style="width:60%;float:left;padding:10px">
+        <dl class="dl-horizontal">
+            @*Tên sản phẩm*@
+            <dt>
+                Tên sản phảm :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TenSP)
+            </dd>
+            @*Mã loại sản phẩm*@
+            <dt>
+                Loại sản phẩm :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LOAI_SAN_PHAM.TenLoai)
+            </dd>
+            @*Đơn vị tính*@
+            <dt>
+                Đơn vị tính :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DVT1.TenDVT)
+            </dd>
+            @*Số lượng tồn*@
+            <dt>
+                @Html.DisplayNameFor(model => model.SoLuongTon)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SoLuongTon)
+            </dd>
+            @*Đơn giá*@
+            <dt>
+                Đơn giá :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DonGia) $
+            </dd>
+            @*Ngày cập nhật*@
+            <dt>
+                Ngày cập nhật :
+            </dt>
+            <dd>
+                @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat)
+            </dd>
+            @*Mô tả*@
+            <dt>
+                Mô tả :
+            </dt>
+            <dd style="width:600px;text-align:justify">
+                @Html.DisplayFor(model => model.MoTa)
+            </dd>
+            <br>
+            @*Button*@
+            <dd>
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Xóa" class="btn btn-default" /> |
+                        <button>@Html.ActionLink("Trở về", "Drug")</button>
+                    </div>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>

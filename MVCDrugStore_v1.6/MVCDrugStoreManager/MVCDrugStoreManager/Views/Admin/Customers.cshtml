@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MVCDrugStoreManager.Models.KHACH_HANG>
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold;text-align:center">Quản lý thông tin khách hàng</h1>
+
+<table id="customers" align="center" style="width:1150px"> 
+    <tr>
+        <th style="text-align:center">
+            Tên khách hàng
+        </th>
+        <th style="text-align:center">
+            Địa chỉ
+        </th>
+        <th style="text-align:center">
+            SĐT
+        </th>
+        <th style="text-align:center">
+            Email
+        </th>
+        <th style="text-align:center"></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="text-align:center">
+            @Html.DisplayFor(modelItem => item.TenKH)
+        </td>
+        <td style="text-align:center">
+            @Html.DisplayFor(modelItem => item.DiaChi)
+        </td>
+        <td style="text-align:center">
+            @Html.DisplayFor(modelItem => item.SDT)
+        </td>
+        <td style="text-align:center">
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td style="text-align:center">
+            <a href="@Url.Action("Chitietkh","Admin", new { id = item.MaKH })" style="padding:5px ;color:black; background-color:deepskyblue; font-weight:bold">
+                Chi tiết
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="@Url.Action("Xoakh","Admin", new { id = item.MaKH })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                Xóa
+            </a>
+        </td>
+    </tr>
+}
+
+</table>

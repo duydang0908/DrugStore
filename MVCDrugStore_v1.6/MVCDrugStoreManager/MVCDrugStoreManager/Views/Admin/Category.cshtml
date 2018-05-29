@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MVCDrugStoreManager.Models.LOAI_SAN_PHAM>
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold; text-align:center">Quản lý loại sản phẩm</h1>
+
+<div style="padding:20px 0 0 30px">
+    <a href="@Url.Action("Themmoiloaisp", "Admin")" style="background-color:lawngreen; color:black; padding:10px; font-weight:bold">
+        Thêm mới
+    </a>
+</div>
+<br />
+<table id="customers" align="center" style="width:1150px">
+    <tr>
+        <th style="text-align:center">
+            Mã loại SP
+        </th>
+        <th style="text-align:center">
+            Tên loại SP
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.MaLoaiSP)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.TenLoai)
+            </td>
+            <td style="text-align:center">
+                <a href="@Url.Action("Sualoaisp","Admin", new { id = item.MaLoaiSP })" style="padding:5px ;color:black; background-color:yellow; font-weight:bold">
+                    Sửa
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("Xoaloaisp","Admin", new { id = item.MaLoaiSP })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                    Xóa
+                </a>
+            </td>
+        </tr>
+    }
+
+</table>
