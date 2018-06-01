@@ -1,0 +1,94 @@
+﻿@model MVCDrugStoreManager.Models.CHI_TIET_PHIEU_GIAO_HANG
+
+@{
+    ViewBag.Title = "ThemmoiPGH";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center;font-weight:bold">Thêm mới phiếu giao hàng</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h3 style="text-align:center;font-weight:bold">Phiếu giao hàng</h3>
+        @*Mã đơn đặt hàng*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.PHIEU_GIAO_HANG.MaDDH, "Mã đơn đặt hàng", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PHIEU_GIAO_HANG.MaDDH, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PHIEU_GIAO_HANG.MaDDH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Mã nhân viên*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.PHIEU_GIAO_HANG.MaNV, "Mã nhân viên", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PHIEU_GIAO_HANG.MaNV, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PHIEU_GIAO_HANG.MaNV, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Ghi chú*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.PHIEU_GIAO_HANG.GhiChu, "Ghi chú", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PHIEU_GIAO_HANG.GhiChu, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PHIEU_GIAO_HANG.GhiChu, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <h3 style="text-align:center;font-weight:bold">Chi tiết phiếu giao hàng</h3>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*Mã sản phẩm*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaSP, "Sản phẩm", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaSP")
+            </div>
+        </div>
+        @*ĐVT*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.DVT,"Đơn vị tính", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DVT")
+            </div>
+        </div>
+        @*Số lượng*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.SoLuong, "Số lượng", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SoLuong, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoLuong, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Đơn gía*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.DonGia, "Đơn giá", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DonGia, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DonGia, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Thành tiền*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.ThanhTien, "Thành tiền", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ThanhTien, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ThanhTien, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        @*Button*@
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tạo" class="btn btn-default" /> |
+                <button>
+                    @Html.ActionLink("Trở về", "Index")
+                </button>
+            </div>
+        </div>
+    </div>
+}
+
+

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Xacnhandonhang";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h2 style="text-align:center; font-weight:bold">Your order is waiting. We will contact to you soon</h2>
+<p style="text-align:center; font-weight:bold">
+    @*@Html.ActionLink("Back to Home", "Index", "Shop")*@
+    <br>
+    <a href="@Url.Action("Index", "DrugStore")" style="background-color:lightslategray; color:black; font-weight:bold; padding: 8px 20px 8px 20px; text-align:center">Back to Home</a>
+</p>

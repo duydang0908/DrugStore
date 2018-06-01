@@ -1,0 +1,72 @@
+﻿@using MVCDrugStoreManager.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MVCDrugStoreManager.Models.PHIEU_GIAO_HANG>
+
+@{
+    ViewBag.Title = "Ship";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold;text-align:center">Quản lý phiếu giao hàng</h1>
+
+<div style="padding:20px 0 0 30px">
+    <a href="@Url.Action("ThemmoiPGH", "Admin")" style="background-color:lawngreen; color:black; padding:10px; font-weight:bold">
+        Thêm mới
+    </a>
+</div>
+<br />
+
+<table id="customers" align="center" style="width:1150px">
+    <tr>
+        <th style="text-align:center">
+            Mã phiếu giao hàng
+        </th>
+        <th style="text-align:center">
+            Mã đơn hàng
+        </th>
+        <th style="text-align:center">
+            Mã nhân viên
+        </th>
+        <th style="text-align:center">
+            Ghi chú
+        </th>
+        <th style="text-align:center"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.MaPGH)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.MaDDH)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.NHAN_VIEN.TenNV)
+            </td>
+            <td style="text-align:center">
+                @Html.DisplayFor(modelItem => item.GhiChu)
+            </td>
+            <td style="text-align:center">
+                <a href="@Url.Action("ChitietPGH","Admin", new { id = item.MaPGH })" style="padding:5px ;color:black; background-color:deepskyblue; font-weight:bold">
+                    Chi tiết
+                </a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="@Url.Action("XoaPGH","Admin", new { id = item.MaPGH })" style="padding:5px ;color:black; background-color:orangered; font-weight:bold">
+                    Xóa
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="MenuTrang" style="padding:20px 0 0 30px">
+    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Ship", new { page = page }))
+    <style>
+        .MenuTrang li {
+            display: inline;
+        }
+    </style>
+</div>

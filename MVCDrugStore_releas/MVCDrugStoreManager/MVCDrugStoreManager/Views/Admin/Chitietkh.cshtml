@@ -1,0 +1,57 @@
+﻿@model MVCDrugStoreManager.Models.KHACH_HANG
+
+@{
+    ViewBag.Title = "Chitietkh";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center;font-weight:bold">Chi tiết thông tin khách hàng</h1>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Khách hàng*@
+        <dt>
+            Tên khách hàng :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenKH)
+        </dd>
+        @*Địa chỉ*@
+        <dt>
+            Địa chỉ :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+        @*SĐT*@
+        <dt>
+            SĐT :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+        @*Email*@
+        <dt>
+            Email :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        @*IDLogin*@
+        <dt>
+            IDLogin :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IDLogin)
+        </dd>
+        <br />
+        <dd>
+            <button>
+                @Html.ActionLink("Trở về", "Customers", "Admin")
+            </button>
+        </dd>
+    </dl>
+</div>
+
+

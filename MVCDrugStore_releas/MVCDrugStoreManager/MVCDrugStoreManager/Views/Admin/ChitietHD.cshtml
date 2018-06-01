@@ -1,0 +1,102 @@
+﻿@model MVCDrugStoreManager.Models.CT_HOA_DON
+
+@{
+    ViewBag.Title = "ChitietHD";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold; text-align:center">Chi tiết hóa đơn</h1>
+
+<div>
+    <h3 style="font-weight:bold; text-align:center">Chi tiết khách hàng</h3>
+    <dl class="dl-horizontal">
+        @*Tên KH*@
+        <dt>
+            Tên khách hàng :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.KHACH_HANG.TenKH)
+        </dd>
+        @*địa chỉ*@
+        <dt>
+            Địa chỉ :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.KHACH_HANG.DiaChi)
+        </dd>
+        @*SĐT*@
+        <dt>
+            Số điện thoại :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.KHACH_HANG.SDT)
+        </dd>
+        @*Email*@
+        <dt>
+            Email :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.KHACH_HANG.Email)
+        </dd>
+    </dl>
+    <h3 style="font-weight:bold; text-align:center">Chi tiết hóa đơn</h3>
+    <dl class="dl-horizontal">
+        @*Ngày lập hóa đơn*@
+        <dt>
+            Ngày lập hóa đơn :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.NgayLapHD)
+        </dd>
+        @*Hình thức thanh toán*@
+        <dt>
+            Hình thức thanh toán :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.HinhThucThanhToan)
+        </dd>
+        @*ĐVT*@
+        <dt>
+            Đơn vị tính :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DVT1.TenDVT)
+        </dd>
+        @*Số lượng*@
+        <dt>
+            Số lượng :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+        @*Đơn giá*@
+        <dt>
+            Đơn giá :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+
+        </dd>
+        @*Thành tiền*@
+        <dt>
+            Thành tiền :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThanhTien)
+        </dd>
+        @*Tổng tiền*@
+        <dt>
+            Thành tiền :
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HOA_DON.TongTien)
+        </dd>
+        <br>
+        <dd>
+            <button>
+                @Html.ActionLink("Trở về", "Bill")
+            </button>
+        </dd>
+    </dl>
+</div>
+

@@ -1,0 +1,70 @@
+﻿@model MVCDrugStoreManager.Models.CHI_TIET_PHIEU_GIAO_HANG
+
+@{
+    ViewBag.Title = "ChitietPGH";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="font-weight:bold; text-align:center">Chi tiết phiếu giao hàng</h1>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @*Mã đơn đặt hàng*@
+        <dt>
+            Mã đơn đặt hàng
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PHIEU_GIAO_HANG.MaDDH)
+        </dd>
+        @*Mã nhân viên*@
+        <dt>
+            Nhân viên
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PHIEU_GIAO_HANG.NHAN_VIEN.TenNV)
+        </dd>
+        @*Ghi chú*@
+        <dt>
+            Ghi chú
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PHIEU_GIAO_HANG.GhiChu)
+        </dd>
+        @*Đơn vị tính*@
+        <dt>
+            Đơn vị tính
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DVT)
+        </dd>
+        @*Số lượng*@
+        <dt>
+            Số lượng
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+        @*Đơn giá*@
+        <dt>
+            Đơn giá
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+        @*Thành tiền*@
+        <dt>
+            Thành tiền
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThanhTien)
+        </dd>
+        <br>
+        <dd>
+            <button>
+                @Html.ActionLink("Trở về", "Ship")
+            </button>
+        </dd>
+    </dl>
+</div>
+

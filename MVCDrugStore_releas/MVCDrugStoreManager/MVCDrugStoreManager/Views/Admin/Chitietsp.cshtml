@@ -1,0 +1,78 @@
+﻿@model MVCDrugStoreManager.Models.SAN_PHAM
+
+@{
+    ViewBag.Title = "Chitietsp";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center; font-weight:bold">Chi tiết sản phẩm</h1>
+
+<div>
+    <div style="padding-left:100px ;width:40%; float: left;border-left:dotted 1px;border-color:azure">
+        <img src="~/images/@Model.Images" style="width:350px ; height:300px" />
+    </div>
+    <div style="width:60%;float:left;padding:10px">
+        <dl class="dl-horizontal">
+            @*Tên sản phẩm*@
+            <dt>
+                Tên sản phẩm :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.TenSP)
+            </dd>
+            @*Loại sản phẩm*@
+            <dt>
+                Loại sản phẩm :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.LOAI_SAN_PHAM.TenLoai)
+            </dd>
+            @*Đơn vị tính*@
+            <dt>
+                Đơn vị tính :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DVT1.TenDVT)
+            </dd>
+            @*Số lượng tồn*@
+            <dt>
+                Số lượng tồn :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.SoLuongTon)
+            </dd>
+            @*Đơn giá*@
+            <dt>
+                Đơn giá :
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DonGia) $
+            </dd>
+            @*Ngày cập nhật*@
+            <dt>
+                Ngày cập nhật :
+            </dt>
+            <dd>
+                @String.Format("{0:dd/MM/yyyy}", Model.NgayCapNhat)
+            </dd>
+            @*Mô tả*@
+            <dt>
+                Mô tả :
+            </dt>
+            <dd style="width:600px;text-align:justify">
+                @Html.DisplayFor(model => model.MoTa)
+            </dd>
+            <br>
+            @*Button*@
+            <dd>
+                <button>
+                    @Html.ActionLink("Sửa", "Suasp", new { id = Model.MaSP })
+                </button> |
+                <button>
+                    @Html.ActionLink("Trở về", "Drug")
+                </button>
+            </dd>
+        </dl>
+    </div>
+</div>
+

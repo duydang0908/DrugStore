@@ -1,0 +1,96 @@
+﻿@model MVCDrugStoreManager.Models.KHACH_HANG
+
+@{
+    /**/
+
+    /**/
+
+    ViewBag.Title = "DangKy";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<h1 style="text-align:center; font-weight:bold">Resignter</h1>
+<table align="center">
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*Họ tên khách hàng*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong>Full Name :</strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.TextBox("HotenKH")
+                @ViewData["Loi1"]
+            </td>
+        </tr>
+        @*Tên đăng nhập*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong> Username : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.TextBox("TenDN")
+                @ViewData["Loi2"]
+            </td>
+        </tr>
+        @*Mật khẩu*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong> Password : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.Password("Matkhau")
+                @ViewData["Loi3"]
+            </td>
+        </tr>
+        @*Nhập lại mật khẩu*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong>Confirm Password : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.Password("Matkhaunhaplai")
+                @ViewData["Loi4"]
+            </td>
+        </tr>
+        @*Email*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong>Email : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.TextBox("Email")
+                @ViewData["Loi5"]
+            </td>
+        </tr>
+        @*Địa chỉ*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong>Address : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.TextBox("Diachi")
+            </td>
+        </tr>
+        @*Điện thoại*@
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <strong>Phone : </strong>
+            </td>
+            <td>
+                &nbsp; &nbsp;@Html.TextBox("Dienthoai")
+                @ViewData["Loi6"]
+            </td>
+        </tr>
+
+        <tr style="height:40px">
+            <td style="text-align:right">
+                <input type="submit" value="Resignter" class="btn btn-default" />
+            </td>
+            <td>
+                &nbsp; &nbsp;&nbsp; &nbsp;<a class="btn btn-default" href="@Url.Action("Index","DrugStore")">Back to Home</a>
+            </td>
+        </tr>
+    }
+</table>
+
